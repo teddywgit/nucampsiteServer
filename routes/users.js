@@ -67,7 +67,7 @@
             err.status = 401;
             return next(err);
         }
-    });
+    })
 
     router.get('/facebook/token', passport.authenticate('facebook-token'), (req, res) => {
         if (req.user) {
